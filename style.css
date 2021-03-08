@@ -1,0 +1,68 @@
+/* Reset */
+body, h1, h2, h3, p, ul{
+    padding: 0px;/*zerando paddin*/
+    margin: 0px;/*Zerando margin*/
+}
+/*estilo padrão*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+/*estilo menu*/
+.menu{
+    background: #252525;
+    padding: 20px 0;/*20px para cima e pra baixo*/
+}
+.menu-container{
+    max-width: 960px;/*facilita o responsivo*/
+    margin: 0 auto;/*0 pra cime e baixo e automatico para esquerda e direita*/
+}
+.menu-container::after, .menu-container::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+a.menu-logo{
+    display: block;
+    float: left;/*elementos flutuando*/
+    margin-left: 10px;
+}
+.menu-lista{
+    float: right;/*flutuando a esquerda*/
+    margin-right: 10px;
+}
+.menu-lista li{
+    display: inline-block;/*elementos em linha*/
+}
+.menu-lista a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.125em;/*calculo px para em 16/18 = 1.125*/
+}
+/*Intro*/
+.intro{
+    background: url('img/bg-intro.jpg') no-repeat center center;
+    background-size:cover;
+    /*padding-top: 150px;cria uma margem interna pra cima cima*/
+    padding: 150px 0;/*significa que o elemento recebeu 150 emcima e baixo e 0 nas laterais*/
+    text-align: center;
+    color: #fff;
+}
+.intro h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.intro h1::after {/*Criando o separador entre o h1 e o p*/
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+.intro p{
+    font-style: italic;
+    font-size: 18px;
+}
